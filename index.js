@@ -7,13 +7,13 @@ const port = process.env.PORT || 8080
 
 app.get('/', (req, res) =>
 {
-    res.render('views/index.ejs')
+    res.render('index.ejs')
 })
 
 app.post('/', (req, res) =>
     {
         const username = req.body.username
-        res.render('views/hello.ejs', {username: username})
+        res.render('hello.ejs', {username: username})
     }
 )
 
